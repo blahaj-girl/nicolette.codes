@@ -24,7 +24,7 @@ body {
 
 h1,
 h2 {
-	font-family: var(--font-type-special);
+	font-family: var(--font-type-serif);
 	font-weight: normal;
 }
 
@@ -43,7 +43,7 @@ h2 {
 }
 
 p {
-	font-family: var(--font-type-serif);
+	font-family: var(--font-type-sans-serif);
 	font-size: 1.1rem;
 	hyphens: auto;
 	line-height: 1.5;
@@ -52,7 +52,7 @@ p {
 
 small,
 li {
-	font-family: var(--font-type-serif);
+	font-family: var(--font-type-sans-serif);
 }
 
 /* Navigation Bar */
@@ -68,7 +68,7 @@ li {
 }
 
 .navbar__menu {
-	font-family: var(--font-type-serif);
+	font-family: var(--font-type-sans-serif);
 	font-size: 1.1rem;
 	text-align: right;
 }

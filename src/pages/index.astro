@@ -1,14 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const pageTitle = "Milky-Way";
+const pageTitle = "nicolette.codes";
 ---
 
 <Layout pageTitle={pageTitle}>
 	<div class="gif">
-		<img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp" />
+		<img
+			class="avatar"
+			width="300"
+			height="259"
+			alt="A comic style avatar representation of Nicolette."
+			src="/nikki-comic.png"
+		/>
 	</div>
-	<h1>Milky-Way</h1>
-	<span class="badge">Digital Craftsman (Developer)</span>
+	<h1>Nicolette Kuhnke</h1>
+	<span class="badge">Frontend Developer</span>
 	<h2>About</h2>
 	<p>
 		Praesent malesuada mi nisi, quis tempus magna venenatis ut. Suspendisse
@@ -107,3 +113,10 @@ const pageTitle = "Milky-Way";
 		turpis bibendum, vitae tristique arcu eleifend.
 	</p>
 </Layout>
+
+<style>
+	.avatar {
+		border-radius: 50%;
+		shape-outside: circle();
+	}
+</style>
