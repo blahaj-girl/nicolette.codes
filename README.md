@@ -1,6 +1,6 @@
 # Nicolette's portfolio website
 
-This is Nicolette's portfolio website, based on the MIT Licensed astro theme [milky-way] (https://github.com/ttomczak3/Milky-Way)
+This is Nicolette's portfolio website, based on the MIT Licensed astro theme [milky-way](https://github.com/ttomczak3/Milky-Way)
 
 ## Change Log
 
