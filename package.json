@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/merriweather": "^5.0.12",
+    "@fontsource/pacifico": "^5.0.12",
+    "@fontsource/poppins": "^5.0.13",
     "astro": "^4.1.3"
   }
 }
