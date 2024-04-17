@@ -4,119 +4,204 @@ const pageTitle = "nicolette.codes";
 ---
 
 <Layout pageTitle={pageTitle}>
-	<div class="gif">
-		<img
-			class="avatar"
-			width="300"
-			height="259"
-			alt="A comic style avatar representation of Nicolette."
-			src="/nikki-comic.png"
-		/>
-	</div>
-	<h1>Nicolette Kuhnke</h1>
-	<span class="badge">Frontend Developer</span>
-	<h2>About</h2>
-	<p>
-		Praesent malesuada mi nisi, quis tempus magna venenatis ut. Suspendisse
-		tempor sem at scelerisque congue. Curabitur mollis, mi id molestie
-		finibus, metus sem sagittis nunc, euismod feugiat orci neque non lorem.
-		Aenean sollicitudin erat eu molestie tempus. Nunc ac eros elementum,
-		fermentum lacus at, pellentesque mauris. Suspendisse eros neque,
-		interdum euismod consectetur convallis, porttitor at massa. Phasellus a
-		ultrices arcu. Donec viverra, lorem in pellentesque euismod, libero
-		justo gravida nibh, non ultricies justo purus ultrices est.
-	</p>
-	<p>
-		Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat
-		accumsan. Proin semper semper dui nec feugiat. Donec cursus neque id
-		aliquet finibus. Morbi facilisis turpis nibh, nec dictum orci dictum
-		nec. In hac habitasse platea dictumst. Maecenas mollis turpis vitae
-		turpis bibendum, vitae tristique arcu eleifend.
-	</p>
+	<section>
+		<div class="gif">
+			<img
+				class="avatar"
+				width="250"
+				height="199"
+				alt="A stylized version of Nicolette as an Octocat(Github mascot)."
+				src="/nikki-octocat.png"
+			/>
+		</div>
+		<h1>Nicolette Kuhnke</h1>
+		<span class="badge">Frontend Developer</span>
+		<h2>About</h2>
+		<p>
+			My name is Nicolette (or Nikki for short), I'm a frontend developer
+			currently based in Stuttgart, Germany. I've always had an interest
+			in technology and started to become curious about coding in 2006
+			when I learned a little about it in school. I started an
+			apprenticeship to become a software developer in 2008, since
+			finishing my apprenticeship I worked as a frontend developer both in
+			Australia and Germany.
+		</p>
+	</section>
 	<div class="center">
 		<a href="/works/">
 			<button class="btn">My portfolio</button>
 		</a>
 	</div>
-	<h2>Skills</h2>
-	<div class="skills center">
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="C#"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="DotNetCore"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="TypeScript"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="Angular"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="Bootstrap"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="CSS"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="HTML"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="JavaScript"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-		/>
-		<img
-			class="skills__img"
-			width="46"
-			height="46"
-			alt="Git"
-			src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-		/>
-	</div>
-	<h2>Interests</h2>
-	<p>
-		Ut at interdum dui. Donec ut ante ex. Maecenas id ex eget nibh consequat
-		accumsan. Proin semper semper dui nec feugiat. Donec cursus neque id
-		aliquet finibus. Morbi facilisis turpis nibh, nec dictum orci dictum
-		nec. In hac habitasse platea dictumst. Maecenas mollis turpis vitae
-		turpis bibendum, vitae tristique arcu eleifend.
-	</p>
+	<section class="skills">
+		<h2>Skills</h2>
+
+		<div class="skills__category">
+			<div class="skills__category-title">Languages</div>
+			<div class="skill__proficiency">
+				<span>HTML</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074; &#10074; &#10074;</span
+				>
+			</div>
+
+			<div class="skill__proficiency">
+				<span>CSS</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074; &#10074;
+				</span>
+				<span class="skill__point">&#10074;</span>
+			</div>
+
+			<div class="skill__proficiency">
+				<span>Javascript</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074; &#10074;
+				</span>
+				<span class="skill__point">&#10074;</span>
+			</div>
+
+			<div class="skill__proficiency">
+				<span>Python</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074;
+				</span>
+				<span class="skill__point">&#10074; &#10074; &#10074;</span>
+			</div>
+			<div class="skill__proficiency">
+				<span>C#</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074;
+				</span>
+				<span class="skill__point">&#10074; &#10074; &#10074;</span>
+			</div>
+		</div>
+
+		<div class="skills__category">
+			<div class="skills__category-title">Frameworks</div>
+			<div class="skill__proficiency">
+				<span>Svelte</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; &#10074;</span>
+			</div>
+			<div class="skill__proficiency">
+				<span>Astro</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; &#10074; &#10074;</span>
+			</div>
+			<div class="skill__proficiency">
+				<span>React</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; &#10074; &#10074;</span>
+			</div>
+			<div class="skill__proficiency">
+				<span>Angularjs</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; </span>
+			</div>
+		</div>
+		<div class="skills__category">
+			<div class="skills__category-title">Tools & Utility</div>
+
+			<div class="skill__proficiency">
+				<span>Highcharts.js</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; </span>
+			</div>
+			<div class="skill__proficiency">
+				<span>Git</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; &#10074;</span>
+			</div>
+			<div class="skill__proficiency">
+				<span>Jira</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; &#10074; &#10074;</span>
+			</div>
+
+			<div class="skill__proficiency">
+				<span>SQL</span>
+				<span class="skill__point skill__point-green"
+					>&#10074; &#10074;
+				</span>
+				<span class="skill__point"> &#10074; &#10074; &#10074;</span>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Interests</h2>
+		<p>
+			Aside from a general interest in technology, I like to read books,
+			play video games, listen to music, build Lego and go roller skating.
+		</p>
+	</section>
 </Layout>
 
 <style>
 	.avatar {
 		border-radius: 50%;
 		shape-outside: circle();
+	}
+
+	.skills {
+		margin-top: 1rem;
+	}
+
+	.skills__category {
+		font-size: 1.6rem;
+		margin-top: 1.2rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.2rem;
+	}
+
+	.skills__category-title {
+		font-size: 2rem;
+	}
+
+	.skill__proficiency {
+		text-transform: uppercase;
+		background-color: #584966;
+		color: var(--text);
+		padding: 0.4rem 0.7rem;
+	}
+
+	.skill__point:nth-child(2) {
+		padding-left: 0.6rem;
+	}
+
+	.skill__proficiency:hover,
+	.skill__proficiency:focus {
+		cursor: pointer;
+	}
+
+	.skill__point {
+		letter-spacing: -0.3em;
+		vertical-align: text-top;
+		line-height: 1;
+	}
+
+	.skill__point-green {
+		color: #78c2ad;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.skills__category {
+			flex-direction: column;
+			width: auto;
+		}
 	}
 </style>

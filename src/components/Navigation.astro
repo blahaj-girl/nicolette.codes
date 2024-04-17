@@ -8,8 +8,37 @@ import ThemeIcon from "./ThemeIcon.astro";
 	</div>
 	<div class="navbar__menu">
 		<a href="/works/">Works</a>
-		<a href="/posts/">Posts</a>
 		<a href="https://github.com/nicolette-codes" target="_blank">GitHub</a>
 		<ThemeIcon />
 	</div>
 </div>
+
+<style>
+	.navbar {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 1.2rem;
+	}
+
+	.navbar__title {
+		font-family: var(--font-type-special);
+		font-size: 2rem;
+	}
+
+	.navbar__menu {
+		font-family: var(--font-type-sans-serif);
+		text-align: right;
+	}
+
+	.navbar__menu > a {
+		margin: 0 1rem;
+	}
+
+	.navbar__title > a:hover,
+	.navbar__menu > a:hover,
+	.navbar__menu > a:focus {
+		text-decoration: underline var(--underline);
+		text-decoration-thickness: 0.3rem;
+		text-underline-offset: 0.6rem;
+	}
+</style>

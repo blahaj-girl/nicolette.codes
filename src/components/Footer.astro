@@ -4,7 +4,7 @@ const year = new Date().getFullYear();
 
 <footer>
 	<div class="center">
-		<ul class="footer">
+		<ul class="footer__links">
 			<li class="icon__btn">
 				<a
 					class="icon__link"
@@ -20,13 +20,65 @@ const year = new Date().getFullYear();
 				>
 			</li>
 		</ul>
-		<small>
-			&copy; {year} Nicolette Kuhnke. All Rights Reserved. Build with <a
-				class="footer__link"
-				href="https://astro.build">Astro</a
-			> and <a class="footer__link" href="https://github.com/ttomczak3"
-				>Milky-Way</a
-			>
-		</small>
+		<div class="footer__text">
+			<small>
+				&copy; {year} Nicolette Kuhnke. All Rights Reserved. Build with <a
+					class="footer__link"
+					href="https://astro.build"
+					target="_blank">Astro</a
+				> and <a
+					class="footer__link"
+					href="https://github.com/ttomczak3/Milky-Way"
+					target="_blank">Milky-Way</a
+				>
+			</small>
+		</div>
 	</div>
 </footer>
+
+<style>
+	footer {
+		margin: 4rem 0;
+	}
+
+	.footer__links {
+		cursor: default;
+		list-style: none;
+		padding: 0;
+	}
+
+	.footer__link {
+		color: var(--text-link);
+		text-decoration: none;
+	}
+
+	.icon__btn {
+		display: inline-block;
+		padding: 0 0.5rem;
+	}
+
+	.icon__link {
+		display: flex;
+		padding: 1rem;
+		height: 5rem;
+		width: 5rem;
+		border-radius: 50%;
+		border: 0.2rem solid #fdebf3;
+	}
+
+	.icon__link:hover {
+		border-color: var(--text-link);
+	}
+
+	.git-icon {
+		content: url("/github-mark-white.svg");
+	}
+
+	.mail-icon {
+		content: url("/mail-white.svg");
+	}
+
+	.footer__text {
+		margin-top: 1.2rem;
+	}
+</style>
