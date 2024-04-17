@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Timeline from "../components/Timeline.astro";
 const pageTitle = "nicolette.codes";
 ---
 
@@ -16,7 +17,7 @@ const pageTitle = "nicolette.codes";
 		</div>
 		<h1>Nicolette Kuhnke</h1>
 		<span class="badge">Frontend Developer</span>
-		<h2>About</h2>
+		<h2 class="base-spacing-top">About</h2>
 		<p>
 			My name is Nicolette (or Nikki for short), I'm a frontend developer
 			currently based in Stuttgart, Germany. I've always had an interest
@@ -28,8 +29,13 @@ const pageTitle = "nicolette.codes";
 		</p>
 	</section>
 	<div class="center">
-		<a href="/works/">
+		<a href="/projects/">
 			<button class="btn">My portfolio</button>
+		</a>
+	</div>
+	<div class="center">
+		<a href="/nicolettes_cv.pdf" target="_blank">
+			<button class="btn">Download CV (German)</button>
 		</a>
 	</div>
 	<section class="skills">
@@ -141,6 +147,11 @@ const pageTitle = "nicolette.codes";
 			</div>
 		</div>
 	</section>
+
+	<section class="work-experience">
+		<h2>Work experience</h2>
+		<Timeline />
+	</section>
 	<section>
 		<h2>Interests</h2>
 		<p>
@@ -151,6 +162,10 @@ const pageTitle = "nicolette.codes";
 </Layout>
 
 <style>
+	.base-spacing-top {
+		margin-top: 2.4rem;
+	}
+
 	.avatar {
 		border-radius: 50%;
 		shape-outside: circle();
@@ -189,13 +204,17 @@ const pageTitle = "nicolette.codes";
 	}
 
 	.skill__point {
-		letter-spacing: -0.3em;
+		letter-spacing: -0.1em;
 		vertical-align: text-top;
 		line-height: 1;
 	}
 
 	.skill__point-green {
 		color: #78c2ad;
+	}
+
+	.work-experience {
+		margin-top: 2.4rem;
 	}
 
 	@media only screen and (max-width: 600px) {
