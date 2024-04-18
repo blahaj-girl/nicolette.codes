@@ -1,45 +1,49 @@
 <div class="timeline">
-	<div class="timeline__placeholder"></div>
-	<div class="timeline__separator"></div>
-	<div class="timeline__content">
-		<div class="timeline__title">Frontend Developer</div>
-		<small class="timeline__subtitle">03/2013 – 12/2022</small>
+	<div class="timeline__card">
+		<div class="timeline__title">
+			<b>Frontend Developer</b>
+			<small class="timeline__subtitle">03/2013 – 12/2022</small>
+		</div>
 		<div class="timeline__description">
-			at <a class="timeline__link">OzGreen Energy Pty Ltd</a> in Stuttgart,
-			Germany.
+			at <a
+				class="timeline__link"
+				href="https://www.ozgreenenergy.com.au/"
+				target="_blank">OzGreen Energy Pty Ltd</a
+			> in Stuttgart, Germany.
 		</div>
 	</div>
 
-	<div class="timeline__placeholder"></div>
-	<div class="timeline__separator"></div>
-	<div class="timeline__content">
-		<div class="timeline__title">Frontend Developer</div>
-		<small class="timeline__subtitle">10/2012 – 02/2013</small>
+	<div class="timeline__card">
+		<div class="timeline__title">
+			<b>Frontend Developer</b>
+			<small class="timeline__subtitle">10/2012 – 02/2013</small>
+		</div>
 		<div class="timeline__description">
 			at Hubble Enterprises Pty Ltd in Brisbane, Australia.
 		</div>
 	</div>
 
-	<div class="timeline__placeholder"></div>
-	<div class="timeline__separator"></div>
-	<div class="timeline__content">
-		<div class="timeline__title">Frontend Developer</div>
-		<small class="timeline__subtitle"> 03/2012 – 10/2012</small>
+	<div class="timeline__card">
+		<div class="timeline__title">
+			<b>Frontend Developer</b>
+			<small class="timeline__subtitle"> 03/2012 – 10/2012</small>
+		</div>
 		<div class="timeline__description">
-			at <a class="timeline__link">OzGreen Energy Pty Ltd</a> in Brisbane,
-			Australia.
+			at <a
+				class="timeline__link"
+				href="https://www.ozgreenenergy.com.au/"
+				target="_blank">OzGreen Energy Pty Ltd</a
+			> in Brisbane, Australia.
 		</div>
 	</div>
 
-	<div class="timeline__placeholder"></div>
-	<div class="timeline__separator"></div>
-	<div class="timeline__content">
+	<div class="timeline__card">
 		<div class="timeline__title">
-			Vocational education(Software Development)
+			<b>Vocational education</b>
+			<small class="timeline__subtitle">09/2008 - 07/2011</small>
 		</div>
-		<small class="timeline__subtitle">09/2008 - 07/2011</small>
 		<div class="timeline__description">
-			at <a
+			Subject Area: Software Development at <a
 				class="timeline__link"
 				href="https://www.ntsystems.de/"
 				target="_blank">NTSystems</a
@@ -54,60 +58,17 @@
 
 <style>
 	.timeline {
-		margin: 2.4rem 1.2rem;
-		display: grid;
-		grid-column-gap: 3rem;
-		grid-template-columns: 0rem 0.6rem 1fr;
-		grid-auto-flow: dense;
 	}
 
-	.timeline__placeholder {
-		grid-column: 1;
-	}
-
-	.timeline__separator {
-		background: var(--underline);
-		position: relative;
-		grid-column: 2;
-	}
-
-	.timeline__separator::before {
-		content: "";
-		position: absolute;
-		top: 2rem;
-		left: 50%;
-		transform: translateX(-50%);
-
-		background: inherit;
-		border-radius: 50%;
-		height: 2rem;
-		width: 2rem;
-	}
-
-	.timeline__content {
-		position: relative;
-		border: 0.6rem solid var(--underline);
-		border-radius: 2rem;
-		padding: 1.2rem;
-		grid-column: 3;
-		margin-bottom: 3rem;
-	}
-
-	.timeline__content::before {
-		content: "";
-		height: 0;
-		position: absolute;
-		top: 1.5rem;
-		width: 0;
-		z-index: 1;
-		left: -1.5rem;
-		border: medium solid var(--underline);
-		border-width: 1rem 1rem 1rem 0;
-		border-color: transparent var(--underline) transparent transparent;
+	.timeline__card {
+		padding: 1rem;
+		margin-bottom: 1.2rem;
 	}
 
 	.timeline__title {
-		font-weight: 900;
+		display: flex;
+		gap: 1.2rem;
+		padding-bottom: 0.2rem;
 	}
 
 	.timeline__subtitle {
@@ -121,9 +82,5 @@
 
 	.timeline__link:hover {
 		cursor: pointer;
-	}
-
-	.timeline__content:last-child {
-		margin-bottom: 0.5rem;
 	}
 </style>

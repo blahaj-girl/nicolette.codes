@@ -26,7 +26,7 @@ html {
 }
 
 body {
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	max-width: 540px;
 	margin: 0 auto;
 	overflow-wrap: break-word;
@@ -86,7 +86,7 @@ li {
 	border-radius: 0.6rem;
 	font-family: var(--font-type-serif);
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	padding: 0.3em 0.6em 0.2em;
 }
 
@@ -102,9 +102,9 @@ li {
 
 .badge--item {
 	border-radius: 0.4rem;
-	font-size: 0.7rem;
+	font-size: 1rem;
 	margin-right: 0.5rem;
-	padding: 0.5em 0.3em 0.3em 0.3em;
+	padding: 0.5rem 0.3rem 0.3rem 0.3rem;
 }
 
 .badge__link {
@@ -121,7 +121,7 @@ li {
 	list-style: none;
 	display: flex;
 	background-size: 400%;
-	padding: 20px;
+	padding: 1.2rem;
 }
 
 .card__link {
@@ -130,9 +130,11 @@ li {
 	line-height: 1.4;
 	border-radius: 0.8rem;
 	color: var(--text);
+	transition: all 0.5s;
 }
 
 .card__img {
+	border: 2px solid #375a7f;
 	border-radius: 1.6rem;
 }
 
@@ -144,9 +146,10 @@ li {
 }
 
 .card__txt {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	line-height: 1.5;
 	text-indent: 0;
+	padding: 0.4rem 0.4rem;
 	text-align: center;
 	margin: 0.5rem 0 0;
 }
@@ -289,8 +292,7 @@ html.light {
 	}
 
 	.badge__list {
-		font-size: 0.9rem;
-		text-indent: 0;
+		font-size: 1.3rem;
 	}
 
 	.pro-img {
