@@ -9,3 +9,5 @@ Todo
 ## 📃 License
 
 This repository is under the MIT License, as per the original repository.
+
+Contributing
